@@ -3,7 +3,7 @@
 ## Contexto
 
 Você deve desenvolver uma landing page para um produto de chat com IA.
-A página deve ser moderna, responsiva e construída com TypeScript, Vite, React e TailwindCSS.
+A página deve ser moderna, responsiva e construída com TypeScript, Vite/NextJS, React e TailwindCSS.
 
 O objetivo é avaliar:
 - Organização e clareza do código
@@ -17,16 +17,16 @@ O objetivo é avaliar:
 
 ### Tecnologias obrigatórias
 - TypeScript
-- Vite
+- Vite/NextJS
 - React
 - TailwindCSS
 
 ### Funcionalidades obrigatórias
 - Header com nome do produto e menu de navegação
 - Seção principal apresentando o produto de chat de IA (ex: imagem, texto descritivo, CTA)
-- Seção de features destacando 3 a 4 funcionalidades
+- Seção de features destacando 3 ou 4 funcionalidades
 - Seção de depoimentos
-- Seção de planos
+- Seção de planos de assinatura
 - Footer com informações da empresa e links para redes sociais
 - Responsividade (mobile, tablet e desktop)
 - Design agradável e coerente com o tema proposto
