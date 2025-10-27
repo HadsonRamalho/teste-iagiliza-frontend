@@ -3,7 +3,7 @@
 ## Contexto
 
 Você deve desenvolver uma landing page para um produto de chat com IA.
-A página deve ser moderna, responsiva e construída com Vite, React e TailwindCSS.
+A página deve ser moderna, responsiva e construída com TypeScript, Vite, React e TailwindCSS.
 
 O objetivo é avaliar:
 - Organização e clareza do código
@@ -16,11 +16,12 @@ O objetivo é avaliar:
 ## Requisitos
 
 ### Tecnologias obrigatórias
+- TypeScript
 - Vite
 - React
 - TailwindCSS
 
-### O que deve conter
+### Funcionalidades obrigatórias
 - Header com nome do produto e menu de navegação
 - Seção principal apresentando o produto de chat de IA (ex: imagem, texto descritivo, CTA)
 - Seção de features destacando 3 a 4 funcionalidades
@@ -32,21 +33,46 @@ O objetivo é avaliar:
 
 ---
 
-## Diferenciais (opcionais)
-- Animações sutis (hover, transições, framer-motion etc.)
-- Uso de componentes reutilizáveis
-- Estrutura de pastas bem organizada
-- Deploy na Vercel ou similar
+## O que será avaliado
+
+| Critério | Peso (1-10)|
+|-----------|------|
+| Boas práticas (nomes, pastas, commits) | 4 |
+| Organização do código | 6 |
+| Interface bem estruturada | 7 |
+| Uso correto do TypeScript | 8 |
+| Funcionalidades completas | 9 |
+| Layout responsivo com Tailwind | 10 |
+| Explicação do projeto e funcionalidades | 10 |
+
+### Desafios Bônus
+
+| Critério | Peso (1-5)|
+|-----------|------|
+| Escrita do código em inglês | 1 |
+| Implementar tema claro e escuro | 1 |
+| Utilizar componentes ShadcnUI | 2 |
+| Utilizar componentes MagicUI (componentes animados) | 3 |
+| Deploy na Vercel ou similar | 4 |
+| Permitir que um usuário possa criar conta e fazer login (mesmo que sem banco de dados ou com dados mockados) | 5 |
+
+---
+
+## Dicas
+
+- Prefira componentes pequenos e reutilizáveis
+- Tipagem é importante, mas clareza vem primeiro
 
 ---
 
 ## Entrega
 
-Prazo para entrega: até o dia 17/10/2025 (Sexta-feira).
-
-Envie:
-- O link do repositório público (GitHub)
-- (Opcional) Link do deploy da landing page
+- A entrega do projeto deve ser feita em até 7 dias após o recebimento do link desse repositório
+- Faça um fork público desse repositório
+- Adicione seu código à medida em que desenvolve
+- Inclua:
+  - Este README atualizado com instruções reais de execução do seu projeto
+  - Todo o código fonte do seu projeto
 
 ---
 
