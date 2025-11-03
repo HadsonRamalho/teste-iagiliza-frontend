@@ -2,7 +2,7 @@
 
 export function Features () {
     return (
-        <section className="bg-[#F8FAFC] py-16">
+        <section id="features" className="bg-[#F8FAFC] py-16">
 
             <div className="container mx-auto px-6 text-center">
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-14">Tudo que você precisa, e mais!</h2>

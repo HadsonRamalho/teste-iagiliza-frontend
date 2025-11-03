@@ -24,11 +24,12 @@ export default function TestimonialsSection() {
   ];
 
   return (
-    <section className="bg-white py-20">
+    <section id="testimonials" className="bg-white py-20">
       <div className="max-w-7xl mx-auto px-6 text-center">
         <h2 className="text-2xl md:text-3xl font-semibold mb-12">
           O que nossos clientes dizem:
         </h2>
+
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {testimonials.map((t, i) => (
