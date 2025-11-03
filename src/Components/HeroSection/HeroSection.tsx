@@ -6,7 +6,7 @@ export default function HeroSection () {
 
             <div className=" flex flex-col lg:flex-row items-center justify-between max-w-7xl mx-auto px-6 py-20 gap-10">
                 
-                <div className="flex-1 text-white">
+                <div className="lg:flex-1 text-white">
                     <h1 className="text-4xl font-semibold md:text-5xl lg:text-6xl mb-8">
                         Automatize seu atendimento com a IA que realmente entende seu cliente
                     </h1>
@@ -19,7 +19,7 @@ export default function HeroSection () {
                     </a>
                 </div>
                 
-                <div className="flex-1">
+                <div className="w-full lg:flex-1">
                     <Image
                         src="/heroImg.jpg"
                         alt="Homem trabalhando no computador"

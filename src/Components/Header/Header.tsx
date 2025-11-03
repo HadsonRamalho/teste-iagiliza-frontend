@@ -4,12 +4,17 @@ import { useState, useEffect } from "react";
 import { HiOutlineMenuAlt3, HiOutlineX } from "react-icons/hi";
 import Link from "next/link"; 
 
+interface NavLink {
+  name: string;
+  href: string;
+}
+
 export default function Navbar() {
-  const [scrolled, setScrolled] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState<boolean>(false);
+  const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 50);
+    const handleScroll = (): void => setScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -37,7 +42,7 @@ export default function Navbar() {
 
         <Link 
           href="#inicio" 
-          className="text-lg font-bold text-black flex-shrink-0 whitespace-nowrap"
+          className="text-lg font-bold text-black shrink-0 whitespace-nowrap"
         >
           AgiliChat
         </Link>
@@ -55,7 +60,7 @@ export default function Navbar() {
           ))}
         </div>
 
-        <div className="hidden min-[820px]:flex items-center flex-shrink-0">
+        <div className="hidden min-[820px]:flex items-center shrink-0">
           <Link
             href="#planos"
             className="bg-[#8093F1] text-white rounded-full font-medium hover:bg-[#5C66C0] transition whitespace-nowrap
@@ -67,7 +72,7 @@ export default function Navbar() {
 
         <div className="min-[820px]:hidden flex items-center">
           <button
-            onClick={() => setMenuOpen(!menuOpen)}
+            onClick={(): void => setMenuOpen(!menuOpen)}
             aria-label="Abrir menu"
             aria-expanded={menuOpen}
             aria-controls="mobile-menu"
@@ -96,7 +101,7 @@ export default function Navbar() {
             key={link.name}
             href={link.href}
             className="text-[#4A4E69] font-medium hover:text-[#8093F1] transition"
-            onClick={() => setMenuOpen(false)}
+            onClick={(): void => setMenuOpen(false)}
           >
             {link.name}
           </Link>
@@ -104,7 +109,7 @@ export default function Navbar() {
         <Link
           href="#planos"
           className="bg-[#8093F1] text-white px-6 py-2 rounded-full font-medium hover:bg-[#5C66C0] transition text-center"
-          onClick={() => setMenuOpen(false)}
+          onClick={(): void => setMenuOpen(false)}
         >
           Começar Agora
         </Link>
