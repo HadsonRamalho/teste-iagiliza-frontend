@@ -73,7 +73,7 @@ export default function Navbar() {
         <div className="min-[820px]:hidden flex items-center">
           <button
             onClick={(): void => setMenuOpen(!menuOpen)}
-            aria-label="Abrir menu"
+            aria-label="Open menu"
             aria-expanded={menuOpen}
             aria-controls="mobile-menu"
           >

@@ -64,7 +64,7 @@ export default function PricingSection() {
   return (
     <section id="pricings" className="w-full py-16 md:py-24 bg-[#F8FAFC]">
       <div className="container mx-auto max-w-7xl px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-20 text-gray-900">
           Escolha o plano perfeito para você:
         </h2>
 
@@ -125,8 +125,8 @@ export default function PricingSection() {
                       className={`mx-auto text-base font-semibold rounded-full py-6 w-3/4 transition-all duration-300
                         ${
                           plan.isPopular
-                            ? "bg-[#7C3AED] hover:bg-[#6D28D9] text-white shadow-lg scale-105"
-                            : "bg-[#8093F1] hover:bg-[#5C66C0] text-white"
+                            ? "bg-[#7C3AED] hover:bg-[#6D28D9] text-white shadow-lg scale-105 active:scale-100"
+                            : "bg-[#8093F1] hover:bg-[#5C66C0] text-white active:scale-95"
                         }`}
                     >
                       <Link href="/login">
