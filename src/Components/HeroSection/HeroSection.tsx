@@ -18,7 +18,7 @@ export default function HeroSection () {
 
                     <Button 
                         asChild
-                        className="bg-white text-[#8093F1] mt-5 px-16 py-6 rounded-full font-extrabold text-xl hover:bg-[#5C66C0] transition-all duration-300 ease-in-out hover:scale-105 hover:text-white shadow-lg"
+                        className="bg-white text-[#8093F1] px-16 py-6 rounded-full font-extrabold text-xl hover:bg-[#5C66C0] transition-all duration-300 ease-in-out hover:scale-105 hover:text-white shadow-lg"
                     >
                         <Link href="#pricings">Começar Agora</Link>
                     </Button>

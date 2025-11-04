@@ -1,6 +1,3 @@
-"use client";
-
-
 import { Button } from "../ui/button";
 import {
   Card,
@@ -12,7 +9,7 @@ import {
 } from "../ui/card";
 import { Badge } from "../ui/badge";
 import { BsCheckCircleFill } from "react-icons/bs";
-import { useRouter } from "next/navigation";
+import Link from 'next/link';
 
 
 interface Plan {
@@ -22,7 +19,6 @@ interface Plan {
   features: string[];
   isPopular: boolean;
 }
-
 
 const plans: Plan[] = [
   {
@@ -64,7 +60,6 @@ const plans: Plan[] = [
 ];
 
 export default function PricingSection() {
-  const router = useRouter();
 
   return (
     <section id="pricings" className="w-full py-16 md:py-24 bg-[#F8FAFC]">
@@ -125,18 +120,19 @@ export default function PricingSection() {
               </CardContent>
 
               <CardFooter className="pb-8">
-                <Button
-                    size="lg"
-                    onClick={() => router.push("/login")}
-                    className={`mx-auto text-base font-semibold rounded-full py-6 w-3/4 transition-all duration-300
+                  <Button size="lg" 
+                      asChild
+                      className={`mx-auto text-base font-semibold rounded-full py-6 w-3/4 transition-all duration-300
                         ${
                           plan.isPopular
                             ? "bg-[#7C3AED] hover:bg-[#6D28D9] text-white shadow-lg scale-105"
                             : "bg-[#8093F1] hover:bg-[#5C66C0] text-white"
                         }`}
-                >
-                  Escolher Plano
-                </Button>
+                    >
+                      <Link href="/login">
+                        Escolher Plano
+                      </Link>
+                  </Button>
               </CardFooter>
             </Card>
           ))}
