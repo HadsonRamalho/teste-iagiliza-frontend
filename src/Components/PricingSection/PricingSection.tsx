@@ -120,8 +120,13 @@ export default function PricingSection() {
 
               <CardFooter className="pb-8">
                 <Button
-                  size="lg"
-                  className="w-full text-lg rounded-full bg-[#8093F1] hover:bg-[#5C66C0] text-white"
+                    size="lg"
+                      className={`mx-auto text-base font-semibold rounded-full py-6 w-3/4 transition-all duration-300
+                        ${
+                          plan.isPopular
+                            ? "bg-[#7C3AED] hover:bg-[#6D28D9] text-white shadow-lg scale-105"
+                            : "bg-[#8093F1] hover:bg-[#5C66C0] text-white"
+                        }`}
                 >
                   Escolher Plano
                 </Button>
