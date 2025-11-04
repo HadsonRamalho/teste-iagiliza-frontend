@@ -14,8 +14,8 @@ export default function HeroSection () {
                         Nosso chatbot inteligente aprende com suas interações e resolve problemas 24/7, para que você possa focar no crescimento do seu negócio
                     </p>
 
-                    <a href="#" className="bg-white text-[#8093F1] px-6 py-3 rounded-full font-bold hover:bg-[#5C66C0]  hover:text-white transition">
-                    Começar Agora
+                    <a href="#pricings" className="bg-white text-[#8093F1] px-6 py-3 rounded-full font-bold hover:bg-[#5C66C0]  hover:text-white transition">
+                        Começar Agora
                     </a>
                 </div>
                 
