@@ -1,3 +1,6 @@
+"use client";
+
+
 import { Button } from "../ui/button";
 import {
   Card,
@@ -9,6 +12,7 @@ import {
 } from "../ui/card";
 import { Badge } from "../ui/badge";
 import { BsCheckCircleFill } from "react-icons/bs";
+import { useRouter } from "next/navigation";
 
 
 interface Plan {
@@ -60,6 +64,8 @@ const plans: Plan[] = [
 ];
 
 export default function PricingSection() {
+  const router = useRouter();
+
   return (
     <section id="pricings" className="w-full py-16 md:py-24 bg-[#F8FAFC]">
       <div className="container mx-auto max-w-7xl px-4">
@@ -121,7 +127,8 @@ export default function PricingSection() {
               <CardFooter className="pb-8">
                 <Button
                     size="lg"
-                      className={`mx-auto text-base font-semibold rounded-full py-6 w-3/4 transition-all duration-300
+                    onClick={() => router.push("/login")}
+                    className={`mx-auto text-base font-semibold rounded-full py-6 w-3/4 transition-all duration-300
                         ${
                           plan.isPopular
                             ? "bg-[#7C3AED] hover:bg-[#6D28D9] text-white shadow-lg scale-105"
