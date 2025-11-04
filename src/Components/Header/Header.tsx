@@ -64,7 +64,7 @@ export default function Navbar() {
           <Button
             asChild
             className="bg-[#8093F1] text-white rounded-full font-medium hover:bg-[#5C66C0] transition whitespace-nowrap
-            min-[820px]:text-sm lg:text-base min-[820px]:px-4 min-[820px]:py-2 lg:px-6 lg:py-2"
+            min-[820px]:text-sm lg:text-base min-[820px]:px-4 min-[820px]:py-2 lg:px-4 lg:py-2"
           >
             <Link href="/login">Começar Agora</Link>
           </Button>
