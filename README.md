@@ -52,7 +52,7 @@ O objetivo é avaliar:
 | Escrita do código em inglês | 1 |
 | Implementar tema claro e escuro | 1 |
 | Utilizar componentes ShadcnUI | 2 |
-| Utilizar componentes MagicUI (componentes animados) | 3 |
+| Utilizar componentes de alguma outra lib disponível no directory do ShadcnUI | 3 |
 | Deploy na Vercel ou similar | 4 |
 | Permitir que um usuário possa criar conta e fazer login (mesmo que sem banco de dados ou com dados mockados) | 5 |
 
